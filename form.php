@@ -6,7 +6,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   if(empty($name)) {
     echo "Please Enter Your Name";
   }else {
-    echo "Welcome ".$name;
+    if(filter_var($email,FILTER_VALIDATE_EMAIL)){
+        echo "Welcome ".$name;
+    }
   }
   
 }
