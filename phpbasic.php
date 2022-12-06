@@ -27,8 +27,10 @@ var_dump($arr);
 echo "<br>";
 
 //Object
-class One {
-  public function getColor() {
+class One 
+{
+  public function getColor() 
+  {
     echo "red";
   }
 }
@@ -101,7 +103,7 @@ for($i=0;$i<count($sortNums);$i++) {
 };
 echo "<br>";
 rsort($sortNums);
-for($i=0;$i<count($sortNums);$i++) {
+for ($i=0;$i<count($sortNums);$i++) {
   echo $sortNums[$i];
 };
 echo "<br>";
@@ -119,7 +121,7 @@ if ($name == "Thet Htar Soe") {
 echo "<br>";
 
 //Switch Statements
-switch($name) {
+switch ($name) {
   case "Thet Htar Soe":
   echo "yes i am";
   break;
@@ -176,38 +178,38 @@ echo $realName;
 echo "<br>"; 
 // while loop
 $i = 10;
-while($i>=1){
+while ($i>=1) {
     echo $i;
     $i--;
 } 
 echo "<br>";
 //for loop
-for($i=1;$i<=10;$i++){
+for ($i=1;$i<=10;$i++) {
     echo $i;
 }
 echo "<br>";
 //for each loop
 $arr = ['a','b','c'];
-foreach($arr as $a){
+foreach ($arr as $a) {
     echo $a;
 } 
 echo "<br>";
 //do while loop
 $i = 1;
-do{
+do {
     echo $i;
     $i++;
-}while($i<=10); 
+}while ($i<=10); 
 echo "<br>";
 //Break & Continue
-for($i=1;$i<=10;$i++){
+for ($i=1;$i<=10;$i++) {
   if($i==4) {
     break;
   }
   echo $i;
 }
 echo "<br>";
-for($i=1;$i<=10;$i++){
+for ($i=1;$i<=10;$i++) {
   if($i==4) {
     continue;
   }
@@ -217,14 +219,16 @@ echo "<br>";
 //----------
 
 //Functions
-function getName($name){
+function getName($name)
+{
     echo $name;
 }
 getName('Thet Htar Soe');  
 echo "<br>";
 
 
-function getNameAge($name,$age){
+function getNameAge($name,$age)
+{
     echo $name,$age;
 }
 getNameAge('Thet Htar Soe',23);
@@ -236,4 +240,4 @@ echo "<br>";
   $sql = "select * from student_table";
   $data = $connection->query($sql)->fetchAll();
   print_r($data);
-?>
+  ?>

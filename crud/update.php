@@ -1,8 +1,7 @@
 <?php 
 require_once("connection.php");
 
-
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $id = $_GET['id'];
   $name = $_POST['name'];
   $email = $_POST['email'];
@@ -11,5 +10,4 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   $res->execute([$name,$email,$id]);
   header("Location:home.php?update=success");
 }
-
 ?>
